@@ -21,7 +21,7 @@ nav{
   z-index: 2;
 }
 nav .container{
-  width:60%;
+  width:80%;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;;
@@ -43,6 +43,7 @@ nav span ul li{
   font-size:27px;
   color: var(--main-secondary);
   cursor: pointer;
+  text-shadow: 0 0 13px black;
 }
 header{
   min-height: 100vh;
@@ -77,6 +78,7 @@ header form .form-group h1{
   left:20px;
   top:calc(50% - 80px);
   left:50px;
+  text-shadow: 0 0 13px black;
 }
 .title-main-att h2{
   font-size: 80px;
