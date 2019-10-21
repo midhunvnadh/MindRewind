@@ -4,6 +4,13 @@
   --main-secondary:#f3f3f3;
   --main-teritiary:#494949;
 }
+::-webkit-scrollbar{
+  width:5px;
+}
+::-webkit-scrollbar-thumb{
+  width:5px;
+  background: var(--main-primary);
+}
 *{
   font-family: 'Slabo 27px', serif;
   color: var(--main-secondary);
@@ -24,7 +31,7 @@ nav .container{
   width:80%;
   margin: 0 auto;
   display: flex;
-  justify-content: space-between;;
+  justify-content: space-evenly;
   align-items: center;
 }
 nav .container .logo-holder{
@@ -43,7 +50,14 @@ nav span ul li{
   font-size:27px;
   color: var(--main-secondary);
   cursor: pointer;
-  text-shadow: 0 0 13px black;
+  padding:8px 14px;
+  border:2px solid var(--main-secondary);
+  border-radius: 100px;
+}
+nav span ul li:hover{
+  border:2px solid var(--main-teritiary);
+  color: var(--main-secondary);
+  background: var(--main-teritiary);
 }
 header{
   min-height: 100vh;
@@ -134,7 +148,6 @@ header .abs-over{
 }
 .bgvideo-holder video{
   width: 100vw;
-<<<<<<< HEAD
 }
 @media screen and (max-width:1094px){
   header .abs-over{
@@ -188,4 +201,91 @@ header .abs-over{
     border-radius: 0;
     box-shadow:none;
   }
+}
+.wp-user{
+  background: url(extras/abstract-abstract-expressionism-abstract-painting-3012724.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  display: flex;
+  justify-content: center;;
+  align-items: center;
+  padding:90px;
+}
+.white-paper{
+  width:60vw;
+  min-height: 100vh;
+  background: #fff;
+  box-shadow: 0 10px 20px -10px black;
+  padding:20px;
+}
+.white-paper .mains .note-title{
+  width: calc(100%);
+  font-size:25px;
+  color:var(--main-teritiary);
+  outline: none;
+  border:2px solid transparent;
+}
+.white-paper .mains .note-title:hover, .white-paper .mains .note-title:focus, .white-paper .mains .note-title:active{
+  border:2px solid var(--main-primary);
+}
+.white-paper .mains input::placeholder, .white-paper .mains textarea::placeholder{
+  color:var(--main-primary);
+}
+.white-paper .mains input{
+  color:var(--main-primary);
+}
+.white-paper .mains .datetime{
+  border: 2px solid transparent;
+  font-size:21px;
+}
+.white-paper .mains .datetime:hover, .white-paper .mains .datetime:focus, .white-paper .mains .datetime:active{
+  border:2px solid var(--main-primary);
+}
+.white-paper .mains .day{
+  color:var(--main-primary)!important;
+  font-size:21px;
+}
+.white-paper .mains textarea{
+  display: flex;
+  width: 100%;
+  max-width: 100%;
+  min-width: 100%;
+  height: 300px;
+  max-height: 300px;
+  min-height: 300px;
+  font-size:21px;
+  outline:0;
+  border:0;
+  color:var(--main-teritiary);
+  min-height: 100vh;
+  resize:none;
+}
+.white-paper .mains .child{
+  margin: 5px;
+}
+@media screen and (max-width:600px){
+  .white-paper{
+    width:100vw;
+  }
+  .wp-user{
+    padding:0;
+  }
+}
+.row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.button-save{
+  color: var(--main-secondary);
+  background: var(--main-primary);
+  border:none;
+  padding:14px 16px;
+  font-size: 21px;
+  width: 100%;
+  cursor: pointer;
+}
+.button-save:hover{
+  background: var(--main-teritiary);
 }
