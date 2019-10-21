@@ -135,6 +135,7 @@ header .abs-over{
 }
 .bgvideo-holder video{
   width: 100vw;
+<<<<<<< HEAD
 }
 @media screen and (max-width:1094px){
   header .abs-over{
@@ -188,4 +189,6 @@ header .abs-over{
     border-radius: 0;
     box-shadow:none;
   }
+=======
+>>>>>>> 09ef3cb3fb551c2696e62e7b25c52496db4350a8
 }
