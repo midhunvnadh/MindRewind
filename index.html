@@ -5,6 +5,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href = "assets/style.css"/>
+  <script src = "assets/jquery.min.js" type="text/javascript"></script>
+  <script src = "assets/main.js" type="text/javascript"></script>
   <title>MindRewind</title>
 </head>
 <body>
@@ -22,20 +24,37 @@
     </div>
   </nav>
   <header>
-    <span class="title-main-att">
-      <h2>Let's start <b style = "color:var(--main-teritiary);">Rewinding</b></h2>
-    </span>
-    <form action="#">
-      <div class  = "form-group">
-        <input type="email" for = "email" placeholder="Email">
-      </div>
-      <div class  = "form-group">
-        <button>
-          Discover
-        </button>
-      </div>
-      <div class  = "form-group"></div>
-    </form>
+    <div class="bgvideo-holder">
+        <video autoplay muted loop>
+          <source src="assets/bg-video.mp4"" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="abs-over">
+      <span class="title-main-att">
+        <h2>Let's start <b style = "color:var(--main-teritiary);">Rewinding</b></h2>
+        <p>We will keep your memories and thoughts free of cost and valuing your privacy</p>
+      </span>
+      <form action="#">
+        <div class  = "form-group">
+          <h1>Start with your Email</h1>
+        </div>
+        <div class  = "form-group">
+          <input type="email" for = "email" placeholder="Email">
+        </div>
+        <div class  = "form-group">
+          <button>
+            Discover
+          </button>
+        </div>
+        <div class  = "form-group">
+          <h1>OR</h1>
+        </div>
+        <div class  = "form-group">
+          <button>Signin with Google</button>
+        </div>
+      </form>
+    </div>
   </header>
 </body>
 </html>
