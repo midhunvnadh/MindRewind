@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+:root{
+  --main-primary:#719192;
+  --main-secondary:#f3f3f3;
+  --main-teritiary:#494949;
+}
+*{
+  font-family: 'Slabo 27px', serif;
+  color: var(--main-secondary);
+}
+body{
+  margin:0;
+}
+nav{
+  background:var(--main-primary);
+  position: fixed;
+  top:0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+nav .container{
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;;
+  align-items: center;
+}
+nav .container .logo-holder{
+  padding: 14px 16px;
+}
+nav span .logo{
+  width:200px;
+  height: auto;
+}
+nav span ul{
+  list-style-type: none;
+}
+nav span ul li{
+  display: inline;
+  margin:0 6px;
+  font-size: 21px;
+  color: var(--main-teritiary);
+  cursor: pointer;
+}
+header{
+  background: var(--main-primary);
+  min-height: 100vh;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  position: relative;
+}
+header form{
+  background: var(--main-secondary);
+  min-height:400px;
+  width:300px;
+  margin-right: 50px;
+  box-shadow: 0 0 20px 0px rgba(0,0,0,0.3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.title-main-att{
+  position: absolute;
+  left:20px;
+  top:calc(50% - 80px);
+}
+.title-main-att h2{
+  font-size: 80px;
+}
