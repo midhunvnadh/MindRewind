@@ -136,3 +136,56 @@ header .abs-over{
 .bgvideo-holder video{
   width: 100vw;
 }
+@media screen and (max-width:1094px){
+  header .abs-over{
+    background: #494949!important;
+    min-height: 100vh;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+  }
+  header .abs-over span{
+    position: relative;
+    margin-block-start: 5em;
+    left:0;
+  }
+  .title-main-att {
+    padding:20px;
+  }
+  .title-main-att h2{
+    font-size: 8vw;
+    margin:0 auto;
+    text-align: center;
+  }
+  header .abs-over form{
+    position: relative;
+    margin:0;
+  }
+  .bgvideo-holder{
+    display: none;
+  }
+}
+@media screen and (max-width:600px){
+
+  /*Form*/
+
+  header form .form-group{
+    margin:0px;
+    margin-bottom:5px;
+  }
+  header form .form-group input{
+    width:300px;
+  }
+  header form .form-group button{
+    width:250px;
+  }
+  header form .form-group button:hover{
+    background: var(--main-teritiary);
+  }
+  header .abs-over form{
+    width:100vw;
+    border-radius: 0;
+    box-shadow:none;
+  }
+}
