@@ -52,7 +52,7 @@ header{
 header .abs-over{
   display: flex;
   justify-content: flex-end;
-  align-items: flex-end;
+  align-items:center;
   background:var(--main-primary);
 }
 header .abs-over form{
@@ -64,8 +64,7 @@ header .abs-over form{
   display: flex;
   justify-content: center;
   align-items: center;
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
+  border-radius: 8px;
   flex-direction: column;
 }
 header form .form-group h1{
@@ -189,6 +188,4 @@ header .abs-over{
     border-radius: 0;
     box-shadow:none;
   }
-=======
->>>>>>> 09ef3cb3fb551c2696e62e7b25c52496db4350a8
 }
