@@ -336,11 +336,21 @@ button:hover{
   width:200px;
   height: 100vh;
   background:var(--main-primary);
+  position: sticky;
+  top:0;
+  bottom:0;
 }
 .user-page .main-userlg{
   width:calc(100% - 200px);
   background: var(--main-secondary);
-  height: 100vh;
+  min-height: 100vh;
+
+  display: flex;
+  justify-content: center;
+  align-content: flex-start;
+}
+.user-page .main-userlg *{
+  color: var(--main-teritiary);
 }
 .side-nav-user .logo{
   width: 100%;
@@ -380,6 +390,23 @@ button:hover{
   background: var(--main-secondary);
 }
 .side-nav-user .cats ol li:hover{
-    color: var(--main-secondary);
-    background: var(--main-primary);
+  color: var(--main-secondary);
+  background: var(--main-primary);
+}
+.diaryposts{
+  padding:50px;
+}
+.diaryposts table{
+  border-spacing: 0px;
+}
+.diaryposts table th{
+  width:300px;
+}
+.diaryposts table th, .diaryposts table td{
+  padding:16px 14px;
+  font-size: 21px
+}
+.diaryposts thead tr th{
+  background: var(--main-primary);
+  color: var(--main-secondary)!important;
 }
