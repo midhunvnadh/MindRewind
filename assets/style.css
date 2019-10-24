@@ -479,7 +479,7 @@ button:hover{
   border: none;
   outline:none;
   margin-bottom:20px;
-  box-shadow:0 5px 20px -6px black;
+  box-shadow:0 8px 14px -12px #333, 0 4px 20px -12px #033;
   position: sticky;
   top:5px;
 }
