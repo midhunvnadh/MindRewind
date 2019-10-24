@@ -371,16 +371,49 @@ button:hover{
 }
 .side-nav-user ul li{
   padding:16px 14px;
-  margin-bottom: 3px;
   background: var(--main-teritiary);
   color: var(--main-secondary);
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  align-items: center;
+  text-align:left;
 }
 .side-nav-user .cats{
-  border-radius:0px
+  border-radius:0px;
+  display: block;
+  display: flex;
+  justify-content:flex-start;
+  flex-direction: row;
+  align-items: center;
+  text-align:left;
 }
 .side-nav-user .cats ol{
   list-style-type: none;
   padding-inline-start:0px;
+  display: none;
+}
+.side-nav-user .catsdp{
+  display: block;
+}
+.side-nav-user .cats li{
+}
+.side-nav-user .catsdp ol{
+  display: block;
+  user-select: none;
+}
+.side-nav-user .cats ol li i{
+  font-size:18px;
+  margin:2px;
+}
+.cats{
+  position: relative;
+}
+.side-nav-user .bottom-drop{
+  font-size:27px;
+  position:absolute;
+  right:5px;
+  top:10px;
 }
 .side-nav-user li{
   cursor:pointer;
@@ -388,6 +421,9 @@ button:hover{
 .side-nav-user li:hover{
   color: var(--main-teritiary);
   background: var(--main-secondary);
+}
+.side-nav-user li:hover i{
+  color: var(--main-teritiary);
 }
 .side-nav-user .cats ol li:hover{
   color: var(--main-secondary);
@@ -402,11 +438,48 @@ button:hover{
 .diaryposts table th{
   width:300px;
 }
+.diaryposts table thead{
+    background: var(--main-primary);
+    border-radius: 6px 6px 6px 6px;
+    -moz-border-radius: 6px 6px 6px 6px;
+    -webkit-border-radius: 6px 6px 6px 6px;
+    overflow: hidden;
+    border:1px solid #000;
+}
 .diaryposts table th, .diaryposts table td{
   padding:16px 14px;
   font-size: 21px
 }
 .diaryposts thead tr th{
-  background: var(--main-primary);
   color: var(--main-secondary)!important;
+}
+.diaryposts tbody tr{
+  background: var(--main-teritiary);
+}
+.diaryposts tbody tr td{
+  color: var(--main-secondary)!important;
+  cursor: pointer;
+}
+.diaryposts tbody tr:hover{
+  opacity:0.9;
+}
+.side-nav-user ul li i{
+  font-size:27px;
+  margin: 5px;
+  width: 31px;
+}
+#search-table{
+  width:100%;
+  border-radius: 100px;
+  height:30px;
+  background:#fff;
+  color: var(--main-primary);
+  padding:20px;
+  font-size:24px;
+  border: none;
+  outline:none;
+  margin-bottom:20px;
+  box-shadow:0 5px 20px -6px black;
+  position: sticky;
+  top:5px;
 }

@@ -5,15 +5,10 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <link rel="stylesheet" href="../assets/style.css"/>
-  <script src = "../assets/user-main.js"></script>
+  <script src="https://kit.fontawesome.com/1835097eda.js" crossorigin="anonymous"></script>
   <script src = "../assets/jquery.min.js"></script>
+  <script src = "../assets/user-main.js"></script>
   <title>UserName</title>
-  <script>
-
-         $(function() {
-            $( "#tabs-13" ).tabs();
-         });
-  </script>
 </head>
 <body class="user-page">
   <nav class="side-nav-user">
@@ -21,14 +16,15 @@
       <img src = "../assets/logo/logo_vector_dark.svg" alt = "Logo"/>
     </div>
     <ul>
-      <li>Thoughts</li>
-      <li>My Diary</li>
+      <li><i class="fas fa-brain"></i> Thoughts</li>
+      <li><i class="fas fa-book"></i> My Diary</li>
       <li class = "cats">
-        Categories<br/><br/>
-        <ol>
-          <li>Category 1</li>
-          <li>Category 2</li>
-          <li>Category 3</li>
+        <i class="fas fa-layer-group"></i>Categories
+        <i class="fas fa-sort-down bottom-drop"></i>
+        <ol style="margin-top: 17px;">
+          <li><i class="fas fa-arrow-right"></i> Catfoods</li>
+          <li><i class="fas fa-arrow-right"></i> SiteLinks</li>
+          <li><i class="fas fa-arrow-right"></i> Important</li>
         </ol>
       </li>
     </ul>
@@ -40,58 +36,59 @@
       <button>Close</button>
     </div>
     <div class="diaryposts">
+      <input type="search" id = "search-table" placeholder="Search Entries"/>
      <table class="diary-posts">
          <thead>
            <tr>
-             <th>No</th>
-             <th>Title</th>
+             <th style = "width:50px;">No</th>
+             <th style = "width:450px">Title</th>
              <th>Date</th>
            </tr>
          </thead>
          <tbody>
            <tr>
-             <td>98</td>
-             <td>Demo #2</td>
+             <td>8</td>
+             <td>I failed in my exams</td>
              <td>Thursday,October 43</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>7</td>
+             <td>My cat does some cat videos now</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>7</td>
+             <td>Are you Seriously doing this ?</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>6</td>
+             <td>Bad Day</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>5</td>
+             <td>My birthday</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>4</td>
+             <td>I love cat videos</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>3</td>
+             <td>I watched cat videos on youtube</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>2</td>
+             <td>My Cat did something strange</td>
              <td>Wednesday,October 23</td>
            </tr>
            <tr>
-             <td>97</td>
-             <td>Demo #1</td>
+             <td>1</td>
+             <td>My Cat's Birthday</td>
              <td>Wednesday,October 23</td>
            </tr>
          </tbody>
