@@ -327,23 +327,20 @@ button:hover{
 }
 .user-page{
   display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap;
+  justify-content: stretch;
+  align-items:stretch;
   position: relative;
 }
 .user-page .side-nav-user{
-  width:200px;
+  --nav-side-width:200px;
+  width:var(--nav-side-width);
   background:var(--main-primary);
   position:sticky;
   top:0;
   bottom:0;
   overflow-y: auto;
-  height: 100vh;
-  max-height:100vh;
 }
 .user-page .main-userlg{
-  width:calc(100% - 200px);
   background: var(--main-secondary);
   min-height: 100vh;
   display: flex;
@@ -362,8 +359,8 @@ button:hover{
   height: 50px;
   top: 0;
   right: 0;
-  left: 200px;
   box-shadow:0 8px 18px -13px rgba(0,0,0,0.6);
+  left:200px;
 }
 #search-table{
   border-radius: 100px;
@@ -391,12 +388,36 @@ button:hover{
   color: var(--main-secondary);
 }
 .side-nav-user .logo{
-  width: 100%;
-  height:150px;
+    width: 100%;
+    height: 90px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    background: var(--main-teritiary);
+    position: relative;
+}
+.side-nav-user .toggle-nav{
+  position: absolute;
+  top:0;
+  right: 0;
+  bottom:0;
+  left:0;
+  background: rgba(0,0,0,0.9);
+  color:var(--main-secondary);
   display: flex;
   justify-content: center;
   align-items: center;
-  overflow: hidden;
+  font-size: 26px;
+  display: none;
+}
+.side-nav-user .toggle-nav i{
+  margin-right: 6px;
+  font-size: 30px;
+}
+.side-nav-user .logo:hover .toggle-nav{
+  display: flex;
+  cursor:pointer;
 }
 .side-nav-user .logo img{
   width: 98%;
@@ -406,6 +427,8 @@ button:hover{
 .side-nav-user ul{
   list-style-type: none;
   padding-inline-start:0px;
+  margin-block-start:0;
+  margin-block-end:0;
 }
 .side-nav-user ul li{
   padding:16px 14px;
@@ -416,6 +439,13 @@ button:hover{
   flex-direction: row;
   align-items: center;
   text-align:left;
+}
+.side-nav-user ul .active-link{
+  color: var(--main-teritiary);
+  background: var(--main-secondary);
+}
+.side-nav-user ul .active-link i, .side-nav-user ul .active-link .nav-links-expanded{
+  color: var(--main-teritiary);
 }
 .side-nav-user .cats{
   border-radius:0px;
@@ -460,6 +490,9 @@ button:hover{
   color: var(--main-teritiary);
   background: var(--main-secondary);
 }
+.side-nav-user li:hover .nav-links-expanded{
+  color: var(--main-teritiary);
+}
 .side-nav-user li:hover i{
   color: var(--main-teritiary);
 }
@@ -470,6 +503,7 @@ button:hover{
 .diaryposts{
   padding:50px;
   padding-top:100px;
+  display: none;
 }
 .diaryposts table{
   border-spacing: 0px;
@@ -508,4 +542,16 @@ button:hover{
   font-size:27px;
   margin: 5px;
   width: 31px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-userlg div h1{
+  color: var(--main-teritiary);
+}
+.main-userlg > div{
+  display: none;
+}
+.section-active{
+  display: flex!important;
 }

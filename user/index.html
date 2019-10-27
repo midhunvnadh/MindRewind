@@ -7,22 +7,26 @@
   <link rel="stylesheet" href="../assets/style.css"/>
   <script src="https://kit.fontawesome.com/1835097eda.js" crossorigin="anonymous"></script>
   <script src = "../assets/jquery.min.js"></script>
+  <script src="../assets/src/ResizeSensor.js"></script>
+  <script src="../assets/src/ElementQueries.js"></script>
   <script src = "../assets/user-main.js"></script>
   <title>UserName</title>
 </head>
 <body class="user-page">
   <nav class="side-nav-user">
     <div class="logo">
-      <img src = "../assets/logo/logo_vector_dark.svg" alt = "Logo"/>
+      <img src = "../assets/logo/logo_vector.svg" alt = "Logo"/>
+      <div class="toggle-nav"><i class="fas fa-arrow-left"></i>Collapse</div>
     </div>
     <ul>
-      <li><i class="fas fa-brain"></i> Thoughts</li>
-      <li><i class="fas fa-book"></i> My Diary</li>
-      <li><i class="fas fa-images"></i> Gallery</li>
-      <li><i class="fas fa-microphone-alt"></i> Audio Files</li>
-      <li><i class="fas fa-table"></i> Tables</li>
+      <li data-trigger="compass" class="active-link"><i class="fas fa-compass"></i> <span class = "nav-links-expanded">Compass</span></li>
+      <li data-trigger="thoughts"><i class="fas fa-brain"></i> <span class = "nav-links-expanded">Thoughts</span></li>
+      <li data-trigger="diaryposts"><i class="fas fa-book"></i> <span class = "nav-links-expanded">My Diary</span></li>
+      <li data-trigger="gallery"><i class="fas fa-images"></i> <span class = "nav-links-expanded"><span class = "nav-links-expanded">Gallery</span></li>
+      <li data-trigger="audio"><i class="fas fa-microphone-alt"></i> <span class = "nav-links-expanded">Audio Files</span></li>
+      <li data-trigger="tables"><i class="fas fa-table"></i> <span class = "nav-links-expanded">Tables</span></li>
       <li class = "cats">
-        <i class="fas fa-layer-group"></i>Categories
+        <i class="fas fa-layer-group"></i><span class = "nav-links-expanded">Categories</span>
         <i class="fas fa-sort-down bottom-drop"></i>
         <ol style="margin-top: 17px;">
           <li><i class="fas fa-arrow-right"></i> Catfoods</li>
@@ -38,7 +42,13 @@
       <h2>We'll take care of your privacy just because other's doesn't</h2>
       <button>Close</button>
     </div>
-    <div class="diaryposts">
+    <div class = "compass section-active">
+      <h1>Compass</h1>
+    </div>
+    <div class = "thoughts">
+      <h1>Thoughts</h1>
+    </div>
+    <div class = "diaryposts">
       <div class="tools-bars-dp">
         <button class="new-post" style="background:#26ace3;border:2px solid #26ace4">
           <i class="fa fa-pencil" aria-hidden="true"></i>  Write
@@ -110,7 +120,16 @@
            </tr>
          </tbody>
     </table>
-  </div>
+    </div>
+    <div class = "gallery">
+      <h1>Gallery</h1>
+    </div>
+    <div class = "audio">
+      <h1>Audio</h1>
+    </div>
+    <div class = "tables">
+      <h1>Tables</h1>
+    </div>
   </section>
 </body>
 </html>
