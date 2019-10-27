@@ -18,6 +18,9 @@
     <ul>
       <li><i class="fas fa-brain"></i> Thoughts</li>
       <li><i class="fas fa-book"></i> My Diary</li>
+      <li><i class="fas fa-images"></i> Gallery</li>
+      <li><i class="fas fa-microphone-alt"></i> Audio Files</li>
+      <li><i class="fas fa-table"></i> Tables</li>
       <li class = "cats">
         <i class="fas fa-layer-group"></i>Categories
         <i class="fas fa-sort-down bottom-drop"></i>
@@ -36,7 +39,21 @@
       <button>Close</button>
     </div>
     <div class="diaryposts">
-      <input type="search" id = "search-table" placeholder="Search Entries"/>
+      <div class="tools-bars-dp">
+        <button class="new-post" style="background:#26ace3;border:2px solid #26ace4">
+          <i class="fa fa-pencil" aria-hidden="true"></i>  Write
+        </button>
+        <button class="new-post">
+          <i class="fa fa-star" aria-hidden="true"></i>  Starred
+        </button>
+        <button class="new-post">
+          <i class="fa fa-file" aria-hidden="true"></i>  Drafts
+        </button>
+        <button class="new-post">
+          <i class="fa fa-trash" aria-hidden="true"></i>  Trash
+        </button>
+        <input type="search" id = "search-table" placeholder="Search Entries"/>
+      </div>
      <table class="diary-posts">
          <thead>
            <tr>

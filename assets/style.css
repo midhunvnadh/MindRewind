@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Slabo+27px&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Roboto&display=swap');
 :root{
   --main-primary:#719192;
   --main-secondary:#f3f3f3;
@@ -12,7 +12,7 @@
   background: var(--main-primary);
 }
 *{
-  font-family: 'Slabo 27px', serif;
+  font-family: 'Roboto', sans-serif;
   color: var(--main-secondary);
   transition: all 0.2s ease;
 }
@@ -334,23 +334,61 @@ button:hover{
 }
 .user-page .side-nav-user{
   width:200px;
-  height: 100vh;
   background:var(--main-primary);
-  position: sticky;
+  position:sticky;
   top:0;
   bottom:0;
+  overflow-y: auto;
+  height: 100vh;
+  max-height:100vh;
 }
 .user-page .main-userlg{
   width:calc(100% - 200px);
   background: var(--main-secondary);
   min-height: 100vh;
-
   display: flex;
   justify-content: center;
   align-content: flex-start;
+  position: relative;
 }
-.user-page .main-userlg *{
-  color: var(--main-teritiary);
+.tools-bars-dp{
+  padding:20px 0;
+  background:var(--main-teritiary);
+  display: flex;
+  justify-content:space-around;
+  align-items: center;
+  margin-block-end:10px;
+  position: fixed;
+  height: 50px;
+  top: 0;
+  right: 0;
+  left: 200px;
+  box-shadow:0 8px 18px -13px rgba(0,0,0,0.6);
+}
+#search-table{
+  border-radius: 100px;
+  background:var(--main-secondary);
+  color: var(--main-primary);
+  padding:20px;
+  font-size:24px;
+  border: none;
+  outline:none;
+  height:53px;
+  width:350px;
+}
+.tools-bars-dp > *{
+  margin:4px;
+  box-shadow:0 8px 14px -12px #333, 0 4px 20px -12px #033;
+}
+.tools-bars-dp > *:hover{
+  box-shadow: 0 7px 20px -6px rgba(0,0,0,0.6);
+}
+.tools-bars-dp button{
+  background:var(--main-primary);
+  color:var(--main-secondary);
+}
+.tools-bars-dp button i{
+  color: var(--main-secondary);
 }
 .side-nav-user .logo{
   width: 100%;
@@ -431,6 +469,7 @@ button:hover{
 }
 .diaryposts{
   padding:50px;
+  padding-top:100px;
 }
 .diaryposts table{
   border-spacing: 0px;
@@ -452,6 +491,8 @@ button:hover{
 }
 .diaryposts thead tr th{
   color: var(--main-secondary)!important;
+  font-weight: normal;
+  text-decoration-style: wavy;
 }
 .diaryposts tbody tr{
   background: var(--main-teritiary);
@@ -467,19 +508,4 @@ button:hover{
   font-size:27px;
   margin: 5px;
   width: 31px;
-}
-#search-table{
-  width:100%;
-  border-radius: 100px;
-  height:30px;
-  background:#fff;
-  color: var(--main-primary);
-  padding:20px;
-  font-size:24px;
-  border: none;
-  outline:none;
-  margin-bottom:20px;
-  box-shadow:0 8px 14px -12px #333, 0 4px 20px -12px #033;
-  position: sticky;
-  top:5px;
 }
