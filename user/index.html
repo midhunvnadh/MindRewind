@@ -14,15 +14,20 @@
 </head>
 <body class="user-page">
   <nav class="tools-bars-dp">
-  <div class="logo">
-    <i class="toggle-nav fas fa-bars"></i>
-    <img src = "../assets/logo/logo_vector_dark.svg" alt = "Logo"/>
-  </div>
-  <div class="search-box">
-    <i class="fas fa-search"></i>
-    <input type="search" id = "search-table" placeholder="Search your Account"/>
-  </div>
-</nav>
+    <div class="logo">
+      <i class="toggle-nav fas fa-bars"></i>
+      <img src = "../assets/logo/logo_vector_dark.svg" alt = "Logo"/>&nbsp;
+    </div>
+    <div class="positioner-nav">
+      <div class="pagename">
+        <span>Compass</span>
+      </div>
+      <div class="search-box">
+        <i class="fas fa-search"></i>
+        <input type="search" id = "search-table" placeholder="Search your Account"/>
+      </div>
+    </div>
+  </nav>
   <nav class="side-nav-user">
       <ul>
         <li data-trigger="compass" class="active-link"><i class="fas fa-compass"></i> <span class = "nav-links-expanded">Compass</span></li>
@@ -49,20 +54,14 @@
         <button>Close</button>
       </div>
       <div class = "compass section-active">
-        <h1>Compass</h1>
+        <h1 class="pageIdTrig">Compass</h1>
       </div>
       <div class = "thoughts">
-        <h1>Thoughts</h1>
+        <h1 class="pageIdTrig">Thoughts</h1>
       </div>
       <div class = "diaryposts">
-       <table class="diary-posts">
-           <thead>
-             <tr>
-               <th style = "width:50px;">No</th>
-               <th style = "width:450px">Title</th>
-               <th>Date</th>
-             </tr>
-           </thead>
+        <h1 class="pageIdTrig">Diary Posts</h1>
+        <table class="diary-posts">
            <tbody>
              <tr>
                <td>8</td>
@@ -113,13 +112,13 @@
       </table>
       </div>
       <div class = "gallery">
-        <h1>Gallery</h1>
+        <h1 class="pageIdTrig">Gallery</h1>
       </div>
       <div class = "audio">
-        <h1>Audio</h1>
+        <h1 class="pageIdTrig">Audio</h1>
       </div>
       <div class = "tables">
-        <h1>Tables</h1>
+        <h1 class="pageIdTrig">Tables</h1>
       </div>
     </section>
 </body>

@@ -13,6 +13,7 @@ $(document).ready(function(){
     if($(this).attr("data-trigger") != "" && $(this).attr("data-trigger") != null){
       $current_active.removeClass("section-active");
       $current_active = $("." + $(this).attr("data-trigger"));
+      $('.pagename span').text($current_active.find('.pageIdTrig').text());
       $($current_active).addClass("section-active");
       $('.active-link').removeClass('active-link');
       $(this).addClass("active-link");
@@ -31,8 +32,8 @@ $(document).ready(function(){
       $toggled = true;
     }
     else{
-      $(".side-nav-user").css("--nav-side-width","100%");
-      $(".side-nav-user ul .nav-links-expanded").show();
+      $(".side-nav-user").css("--nav-side-width","234px");
+      $(".side-nav-user ul .nav-links-expanded").show(500);
       $toggled = false;
     }
   });

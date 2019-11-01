@@ -335,7 +335,7 @@ button:hover{
 }
 .user-page{
     display: grid;
-    grid-template-columns: 16% auto auto auto auto;
+    grid-template-columns: max-content auto auto auto auto;
     grid-template-rows: 100px auto;
     height: 100vh;
   }
@@ -351,12 +351,13 @@ button:hover{
     grid-column: 2 / 6;
 	}
 .user-page .side-nav-user{
-  --nav-side-width:auto;
+  --nav-side-width:234px;
   width:var(--nav-side-width);
   background:var(--main-secondary);
   position:sticky;
   top:0;
   bottom:0;
+  padding-top:5px;
   overflow-y: auto;
   overflow-x:hidden;
   padding-right: 10px;
@@ -365,9 +366,6 @@ button:hover{
 .user-page .main-userlg{
   background: var(--main-secondary);
   overflow-y: scroll;
-  display: flex;
-  justify-content: center;
-  align-content: flex-start;
   position: relative;
 }
 .tools-bars-dp{
@@ -391,6 +389,7 @@ button:hover{
   background: var(--main-secondary);
   position: relative;
   padding: 0 0 0 16px;
+  width: 298px;
 }
 .tools-bars-dp .logo i{
   font-size: 26px;
@@ -422,9 +421,26 @@ button:hover{
   box-sizing: border-box;
   border-right: 1px solid rgba(0,0,0,0.11);
   margin-right: 10px;
+  padding:5px;
+}
+.tools-bars-dp .pagename{
+  padding:0px 16px;
+}
+.tools-bars-dp .pagename span{
+  width: 200px;
+  font-size:24px;
+  color:var(--main-teritiary);
+  font-weight: bold;
+}
+.tools-bars-dp .positioner-nav{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
 }
 .search-box{
   position: relative;
+  padding:0 16px;
 }
 .search-box #search-table{
   border-radius:9px;
@@ -442,9 +458,12 @@ button:hover{
   color: var(--main-teritiary);
   position: absolute;
   font-size: 23px;
-  left: 14px;
+  left: 28px;
   top: 29%;
   opacity: 0.86;
+}
+.pageIdTrig{
+  display: none;
 }
 .side-nav-user ul{
   list-style-type: none;
@@ -465,11 +484,10 @@ button:hover{
   border-bottom-right-radius: 100px;
 }
 .side-nav-user ul .active-link{
-  color: var(--main-teritiary);
-  border-left:5px solid var(--main-primary);
+  background: #e8f0fe;
 }
 .side-nav-user ul .active-link i, .side-nav-user ul .active-link .nav-links-expanded{
-  color: var(--main-teritiary);
+  color: #1a73e8;
 }
 .nav-links-expanded{
    color: var(--main-teritiary);
@@ -526,18 +544,17 @@ button:hover{
   background: var(--main-secondary);
 }
 .diaryposts{
-  padding:50px;
-  padding-top:100px;
   display: none;
 }
 .diaryposts table{
   border-spacing: 0px;
+  width: 100%;
 }
 .diaryposts table th{
   width:300px;
 }
 .diaryposts table thead{
-  background: var(--main-primary);
+  background: var(--main-secondary);
   border-radius: 6px 6px 6px 6px;
   -moz-border-radius: 6px 6px 6px 6px;
   -webkit-border-radius: 6px 6px 6px 6px;
@@ -549,15 +566,16 @@ button:hover{
   font-size: 21px
 }
 .diaryposts thead tr th{
-  color: var(--main-secondary)!important;
+  color: var(--main-teritiary)!important;
   font-weight: normal;
   text-decoration-style: wavy;
 }
 .diaryposts tbody tr{
-  background: var(--main-teritiary);
+  background: var(--main-secondary);
+  border-bottom: 1px solid rgba(0,0,0,0.1);
 }
 .diaryposts tbody tr td{
-  color: var(--main-secondary)!important;
+  color: var(--main-teritiary)!important;
   cursor: pointer;
 }
 .diaryposts tbody tr:hover{
