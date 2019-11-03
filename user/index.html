@@ -4,7 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <link rel="stylesheet" href="../assets/style.css"/>
+  <link rel="stylesheet" href="../assets/styles/style.css"/>
   <script src="https://kit.fontawesome.com/1835097eda.js" crossorigin="anonymous"></script>
   <script src = "../assets/jquery.min.js"></script>
   <script src="../assets/src/ResizeSensor.js"></script>
@@ -27,6 +27,7 @@
         <input type="search" id = "search-table" placeholder="Search your Account"/>
       </div>
     </div>
+    <div class="loader"><span class="moves"></span></div>
   </nav>
   <nav class="side-nav-user">
       <ul>
@@ -37,16 +38,18 @@
         <li data-trigger="audio"><i class="fas fa-microphone-alt"></i> <span class = "nav-links-expanded">Audio Files</span></li>
         <li data-trigger="tables"><i class="fas fa-table"></i> <span class = "nav-links-expanded">Tables</span></li>
         <li class = "cats">
-          <i class="fas fa-layer-group"></i><span class = "nav-links-expanded">Categories</span>
+          <i class="fas fa-layer-group"></i>
+          <span class = "nav-links-expanded">Categories</span>
           <i class="nav-links-expanded fas fa-sort-down bottom-drop"></i>
           <ol style="margin-top: 17px;">
+            <i class="itext">Categories</i>
             <li><i class="fas fa-arrow-right"></i> Catfoods</li>
             <li><i class="fas fa-arrow-right"></i> SiteLinks</li>
             <li><i class="fas fa-arrow-right"></i> Important</li>
           </ol>
         </li>
       </ul>
-    </nav>
+  </nav>
   <section class="main-userlg">
       <div class = "initial-intro">
         <h1>Hey, Welcome [user].</h1>
@@ -61,55 +64,10 @@
       </div>
       <div class = "diaryposts">
         <h1 class="pageIdTrig">Diary Posts</h1>
-        <table class="diary-posts">
-           <tbody>
-             <tr>
-               <td>8</td>
-               <td>I failed in my exams</td>
-               <td>Thursday,October 43</td>
-             </tr>
-             <tr>
-               <td>7</td>
-               <td>My cat does some cat videos now</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>7</td>
-               <td>Are you Seriously doing this ?</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>6</td>
-               <td>Bad Day</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>5</td>
-               <td>My birthday</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>4</td>
-               <td>I love cat videos</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>3</td>
-               <td>I watched cat videos on youtube</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>2</td>
-               <td>My Cat did something strange</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-             <tr>
-               <td>1</td>
-               <td>My Cat's Birthday</td>
-               <td>Wednesday,October 23</td>
-             </tr>
-           </tbody>
-      </table>
+        <table>
+          <tbody class = "JSON_data">
+          </tbody>
+        </table>
       </div>
       <div class = "gallery">
         <h1 class="pageIdTrig">Gallery</h1>
