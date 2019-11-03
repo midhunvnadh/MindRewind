@@ -1,5 +1,5 @@
 # Client Side
-1. We use sass (improves website compactibility)
+1. We use sass (improves website compatibility)
 2. #JustContibute
 3. SQL file is provided. It consists of 2 tables. Table_name : mindrewind
 4. Add More Features
