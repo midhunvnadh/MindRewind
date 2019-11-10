@@ -33,7 +33,8 @@ CREATE TABLE `users` (
   `email` text NOT NULL,
   `uq_id` text NOT NULL,
   `timestamp` timestamp NOT NULL DEFAULT current_timestamp(),
-  `autoi` int(11) NOT NULL
+  `autoi` int(11) NOT NULL AUTO_INCREMENT,
+  PRIMARY KEY (autoi) 
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 
 -- --------------------------------------------------------
